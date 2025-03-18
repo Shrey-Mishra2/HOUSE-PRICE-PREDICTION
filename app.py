@@ -4,10 +4,10 @@ import numpy as np
 
 # Load the trained model with error handling
 try:
-    with open('house_price_model (3).pkl', 'rb') as file:
+    with open('house_price_model.pkl', 'rb') as file:
         model = pickle.load(file)
 except FileNotFoundError:
-    st.error("Error: 'house_price_model (3).pkl' not found. Please ensure the file is in the correct directory.")
+    st.error("Error: 'house_price_model.pkl' not found. Please ensure the file is in the correct directory.")
     st.stop()
 
 # Title of the app
