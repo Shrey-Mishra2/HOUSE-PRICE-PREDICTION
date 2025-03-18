@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 # Load the trained model
-with open('house_price_model.pkl', 'rb') as file:
+with open('./house_price_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Title of the app
